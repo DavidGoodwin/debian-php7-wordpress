@@ -1,10 +1,12 @@
 Docker image for hosting e.g Wordpress with PHP 7.0
 
-Notable 'features' 
+## 'features' 
 
  * dotdeb.org PHP version (7.0)
  * includes msmtp - with default config (allowing wordpress to send out mail via /usr/sbin/sendmail) (the host 'mail' needs to resolve to somewhere that will relay).
  * mount public files at /var/www/html within the container .
+
+## running
 
 ```bash
 
@@ -15,4 +17,7 @@ docker run -d -ti davidgoodwin:jessie-php7-wordpress \
     -p 8080:80
 ```
 
+## docker hub
+
+See : https://hub.docker.com/r/davidgoodwin/jessie-php7-wordpress/
 
