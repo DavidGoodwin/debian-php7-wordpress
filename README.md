@@ -10,11 +10,12 @@ Docker image for hosting e.g Wordpress with PHP 7.0
 
 ```bash
 
-docker run -d -ti davidgoodwin:jessie-php7-wordpress \
+docker run -d --rm \
     -v /local/path/to/wordpress:/var/www/html \
     --add-host MailRelayName:mail \
     --name=SomethingFriendly \
-    -p 8080:80
+    -p 8080:80 \
+    davidgoodwin/jessie-php7-wordpress:latest \
 ```
 
 ## docker hub
