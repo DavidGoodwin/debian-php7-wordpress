@@ -1,5 +1,10 @@
 Docker image for hosting e.g Wordpress with PHP 7.0
 
+## docker hub
+
+See : https://hub.docker.com/r/davidgoodwin/jessie-php7-wordpress/
+
+
 ## 'features' 
 
  * dotdeb.org PHP version (7.0)
@@ -17,8 +22,4 @@ docker run -d --rm \
     -p 8080:80 \
     davidgoodwin/jessie-php7-wordpress:latest \
 ```
-
-## docker hub
-
-See : https://hub.docker.com/r/davidgoodwin/jessie-php7-wordpress/
 
