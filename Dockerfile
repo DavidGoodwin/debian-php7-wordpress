@@ -3,7 +3,8 @@ FROM debian:jessie-slim
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get -qq update && \
-    apt-get -qy install eatmydata apt-transport-https && \
+    apt-get -qy install eatmydata && \
+    eatmydata -- apt-get -qy install apt-transport-https && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 COPY debsury.gpg /etc/apt/trusted.gpg.d/debsury.gpg
