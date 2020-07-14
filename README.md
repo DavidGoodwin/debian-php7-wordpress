@@ -2,7 +2,7 @@ Docker image for hosting e.g Wordpress with PHP 7.0
 
 ## docker hub
 
-See : https://hub.docker.com/r/davidgoodwin/jessie-php7-wordpress/
+See : https://hub.docker.com/r/davidgoodwin/debian-php7-wordpress/
 
 
 ## 'features' 
@@ -20,6 +20,6 @@ docker run -d --rm \
     --add-host MailRelayName:mail \
     --name=SomethingFriendly \
     -p 8080:80 \
-    davidgoodwin/jessie-php7-wordpress:latest \
+    davidgoodwin/debian-php7-wordpress:latest \
 ```
 
