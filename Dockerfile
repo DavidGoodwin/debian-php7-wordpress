@@ -1,6 +1,9 @@
-FROM debian:jessie-slim
+FROM debian:stretch-slim
 
 ENV DEBIAN_FRONTEND=noninteractive
+
+COPY sources.list /etc/apt/sources.list
+#COPY 90-expire-check /etc/apt/apt.conf.d/90-expire-check
 
 RUN apt-get -qq update && \
     apt-get -qy install eatmydata && \

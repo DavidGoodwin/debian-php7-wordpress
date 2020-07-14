@@ -1,0 +1,3 @@
+deb http://mirror.bytemark.co.uk/debian/ stretch main
+deb http://security.debian.org/ stretch/updates main
+deb http://deb.debian.org/debian stretch-backports main
