@@ -4,7 +4,7 @@ set -exu
 
 cd $(dirname $0)
 
-docker login -u davidgoodwin -p gingersharkbeans99
+docker login -u davidgoodwin -p $(< .docker.pass)
 
 docker build --rm --no-cache --pull \
      -t davidgoodwin/debian-php7-wordpress:build-$(date +%F) \
